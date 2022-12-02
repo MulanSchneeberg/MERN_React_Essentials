@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <title>React ⚛️</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    let robot = "🤖";
+    let cowboy = "🤠";
+    let moon = "🌝";
+    let name = "React";
+    function Header() {
+      return (
+        <header>
+          <h1>Eve's kitchen</h1>
+          <ul>
+            <li>{robot}</li>
+            <li>{cowboy}</li>
+            <li>{moon}</li>
+            <li>{name.toUpperCase()}</li>
+            <li>{name.length}</li>
+          </ul>
+        </header>
+      )
+    }
+
+    function Main() {
+      return (
+        <section>
+          <p> We are serving the best food
+          </p>
+        </section>
+      )
+    }
+
+    function APP() {
+      return (
+        <div>
+          <Header/>
+          <Main />
+        </div>
+      )
+
+    }
+
+    ReactDOM.render(
+      <APP />,
+      document.getElementById("root")
+    );
+  </script>
+</body>
+
+</html>
