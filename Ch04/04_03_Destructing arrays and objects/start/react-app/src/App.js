@@ -1,9 +1,10 @@
 import "./App.css";
 
-function App() {
+
+function App({lib}) {
   return (
     <div className="App">
-      <h1>Hello from React</h1>
+      <h1>Hello from {lib}</h1>
     </div>
   );
 }
